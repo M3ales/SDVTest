@@ -1,14 +1,19 @@
 #!/usr/bin/env groovy
 
 pipeline {
-    agent {
-        docker { image 'node:14-alpine' }
-    }
+    agent any
     stages {
-        stage('Test') {
+        stage('Build') {
             steps {
-                sh 'node --version'
+                echo 'Building'
+                sh 'nuget restore SDVTest.sln'
+                sh "dotnet build"
             }
+        }
+    }
+    post {
+        always {
+        archive 'SDVTest/bin/Release/**'
         }
     }
 }
