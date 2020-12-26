@@ -1,6 +1,9 @@
-﻿namespace SDVTest
+﻿using StardewValley;
+
+namespace SDVTest
 {
-  public class Class1
-  {
-  }
+    public class Class1
+    {
+        
+    }
 }

@@ -1,0 +1,10 @@
+{
+  "Name": "SDVTtest",
+  "Author": "Jaredlll08",
+  "Version": "1.0.0",
+  "Description": "<One or two sentences about the mod>",
+  "UniqueID": "Jaredlll08.SDVTest",
+  "EntryDll": "SDVTest.dll",
+  "MinimumApiVersion": "3.0.0",
+  "UpdateKeys": []
+}
